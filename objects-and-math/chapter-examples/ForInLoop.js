@@ -5,5 +5,9 @@ let tortoiseOne = {
    age: 85,
    diet: ["pumpkins", "lettuce", "cabbage"]
 };
+// 
+let num = Math.round(Math.random()*10);
+
+console.log(num);
 
 // Using a for..in loop, iterate through each property in the tortoiseOne object and print the value to the console.
