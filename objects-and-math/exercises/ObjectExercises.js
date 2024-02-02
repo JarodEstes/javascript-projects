@@ -48,26 +48,27 @@ let crew = [superChimpOne, salamander, superChimpTwo, puppyPower, animalFive]
 
 // let crew = [superChimpOne, superChimpTwo, salamander, puppyPower, animalFive];
 
-function crewReport() {
-   for (i = 0; i < crew; i ++)
-   return `${name} is a ${species}. They are ${age} years old and ${mass} kilograms. Their ID is ${astronautID}.`
+function crewReport(animal) {
+   return `${animal.name} is a ${animal.species}. They are ${animal.age} years old and ${animal.mass} kilograms. Their ID is ${animal.astronautID}.`
 };
+console.log(crewReport(animalFive));
 
 
-function fitnessTest(candidates){
-   let results = [], numSteps, turns;
-   for (let i = 0; i < candidates.length; i++){
+function fitnessTest(crew){
+   let results = []
+
+   for (const crewMember of crew) {
        numSteps = 0;
        turns = 0;
        while(numSteps < 20){
-       numSteps += candidates[i].move();
+       numSteps += crew[i].move();
        turns++;
        }
-       results.push(`${candidates[i].name} took ${turns} turns to take 20 steps.`);
+       results.push(`${crew[i].name} took ${turns} turns to take 20 steps.`);
    }
    return results;
   }
-
+console.log(fitnessTest(puppyPower));
 
 // After you have created the other object literals, add the astronautID property to each one.
 
