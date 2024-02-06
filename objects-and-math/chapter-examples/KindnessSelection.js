@@ -1,6 +1,7 @@
 function randomSelection(arr){
    let index = Math.floor(Math.random()*arr.length);
    return arr[index];
+   console.log(randomSelection, words[randomSelection]);
  }
  
  let happiness = ['Hope', 'Joy', 'Peace', 'Love', 'Kindness', 'Puppies', 'Kittens', 'Tortoise'];
@@ -10,6 +11,7 @@ function randomSelection(arr){
  for (i=0; i < 8; i++){
    console.log(randomSelection(happiness));
  }
+ 
  
  //Experiment with the code above. Try to:
  //a) Print 3 random selections from each array.

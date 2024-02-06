@@ -1,7 +1,18 @@
-let nums = [3.14, 42, 4811];
+// let nums = [3.14, 42, 4811];
 
 // TODO: Write a mapping function
 // and pass it to .map()
-let halved = nums.map();
+// let halved = nums.map();
+
+// console.log(halved);
+
+
+let nums = [3.14, 42, 4811];
+  
+// TODO: Write a mapping function
+// and pass it to .map()
+let halved = nums.map(function (n) {
+  return n/2;
+});
 
 console.log(halved);
