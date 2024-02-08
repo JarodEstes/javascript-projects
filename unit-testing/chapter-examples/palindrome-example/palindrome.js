@@ -7,3 +7,8 @@ function reverse(str) {
  }
  
  module.exports = isPalindrome;
+
+ const isPalindrome= require('../palindrome.js');
+ describe("testing isPalindrome", function() {
+  
+ });
