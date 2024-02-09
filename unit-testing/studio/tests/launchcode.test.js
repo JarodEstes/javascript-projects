@@ -12,4 +12,6 @@ describe("Testing launchcode", function(){
   test('Returns value as "nonprofit" for the key organization',function (){
     expect(launchcode.percentageCoolEmployees).toBe(100)
   })
+
+  
 });
