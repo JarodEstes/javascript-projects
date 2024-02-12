@@ -1,3 +1,5 @@
+
+
 function gradeLabs(labs) {
   for (let i=0; i < labs.length; i++) {
     let lab = labs[i];
@@ -5,6 +7,7 @@ function gradeLabs(labs) {
     console.log(`${lab.student} code worked: ${result === 27}`);
   }
 }
+
 
 let studentLabs = [
   {
@@ -20,5 +23,8 @@ let studentLabs = [
     }
   }
 ];
-
+try {
 gradeLabs(studentLabs);
+} catch(err) {
+  console.log('Error thrown.');
+}
